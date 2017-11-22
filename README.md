@@ -4,7 +4,7 @@
 There are three ESLint configurations to use.
 
 Firstly, install package
-`npm install git+https://git@github.com/zeplin/eslint-config-zeplin.git`
+`npm install git+ssh://git@github.com/zeplin/eslint-config-zeplin.git`
 
 
 ### eslint-config-zeplin or eslint-config-zeplin/base
