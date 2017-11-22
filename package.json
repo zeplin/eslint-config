@@ -1,4 +1,5 @@
 {
+  "name": "eslint-config-zeplin",
   "author": "",
   "bundleDependencies": false,
   "deprecated": false,
@@ -11,9 +12,12 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "eslint-config-zeplin",
   "scripts": {
     "test": "test"
   },
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "peerDependencies": {
+    "eslint": ">= 3",
+    "eslint-plugin-react": ">= 7"
+  }
 }
