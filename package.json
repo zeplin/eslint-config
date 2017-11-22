@@ -1,0 +1,19 @@
+{
+  "author": "",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "provides Zeplin's .eslintrc as an extensible config.",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "zeplin"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "eslint-config-zeplin",
+  "scripts": {
+    "test": "test"
+  },
+  "version": "1.0.0"
+}
