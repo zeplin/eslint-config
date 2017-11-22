@@ -14,28 +14,6 @@ module.exports = {
     }
   },
   extends: "./base.js",
-  globals: {
-    Autolinker: false,
-    CodeMirror: false,
-    Cookies: false,
-    ImportProgresses: false,
-    ga: false,
-    fbq: false,
-    hexFull: false,
-    Intercom: false,
-    JSZip: false,
-    Mailcheck: false,
-    mixpanel: false,
-    Plaid: false,
-    process: false,
-    Raven: false,
-    require: false,
-    Stripe: false,
-    StripeCheckout: false,
-    YT: false,
-    Zeplin: false,
-    Croppie: false
-  },
   rules: {
     "react/jsx-curly-spacing": "error",
     "react/jsx-key": "warn",
