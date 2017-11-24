@@ -15,6 +15,7 @@ module.exports = {
   },
   extends: "./base.js",
   rules: {
+    "no-var": "warn",
     "react/jsx-curly-spacing": "error",
     "react/jsx-key": "warn",
     "react/jsx-no-bind": ["error", { ignoreRefs: true }],
