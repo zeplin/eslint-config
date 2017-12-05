@@ -31,6 +31,26 @@ module.exports = {
     "react/prefer-es6-class": "error",
     "react/prefer-stateless-function": "warn",
     "react/require-render-return": "error",
-    "react/self-closing-comp": ["error", { html: false, component: true }]
+    "react/self-closing-comp": ["error", { html: false, component: true }],
+    "jsx-quotes": "error",
+    "react/jsx-closing-bracket-location": [1, "after-props"], 
+    "react/jsx-closing-tag-location": "error",
+    "react/jsx-equals-spacing": "error",
+    "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/jsx-pascal-case": "error",
+    "react/jsx-tag-spacing": ["error", {
+        "closingSlash": "never",
+        "beforeSelfClosing": "never",
+        "afterOpening": "never"
+    }],
+    "react/jsx-wrap-multilines": ["error", {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "parens-new-line",
+        "condition": "parens-new-line",
+        "logical": "parens-new-line",
+        "prop": "parens-new-line"
+    }]
   }
 };

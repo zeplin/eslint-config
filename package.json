@@ -1,9 +1,6 @@
 {
   "name": "eslint-config-zeplin",
-  "author": "",
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "provides Zeplin's .eslintrc as an extensible config.",
+  "description": "Provides Zeplin's .eslintrc as an extensible config.",
   "keywords": [
     "eslint",
     "eslintconfig",
@@ -12,12 +9,9 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
   "version": "1.0.0",
   "peerDependencies": {
     "eslint": ">= 4",
-    "eslint-plugin-react": ">= 7"
+    "eslint-plugin-react": ">= 7.5"
   }
 }
