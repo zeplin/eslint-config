@@ -31,7 +31,7 @@ module.exports = {
         properties: "never"
       }
     ],
-    "capitalized-comments": "error",
+    "capitalized-comments": "warn",
     "class-methods-use-this": "error",
     "comma-dangle": "error",
     "comma-spacing": "error",
@@ -44,7 +44,7 @@ module.exports = {
     ],
     "computed-property-spacing": ["error", "never"],
     curly: "error",
-    "default-case": "error",
+    "default-case": "warn",
     "dot-location": ["error", "property"],
     "dot-notation": "error",
     "eol-last": "off",
@@ -70,13 +70,11 @@ module.exports = {
     "keyword-spacing": "error",
     "linebreak-style": ["error", "unix"],
     "max-depth": "error",
-    "max-len": [
-      "error",
-      {
+    "max-len": ["error", {
         "code": 120,
-        "ignoreComments": true
-      }
-    ],
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true
+      }],
     "max-nested-callbacks": [
       "error",
       {
