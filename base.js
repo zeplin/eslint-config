@@ -31,7 +31,7 @@ module.exports = {
         properties: "never"
       }
     ],
-    "capitalized-comments": "warn",
+    "capitalized-comments": ["warn"],
     "class-methods-use-this": "error",
     "comma-dangle": "error",
     "comma-spacing": "error",
@@ -216,7 +216,7 @@ module.exports = {
       "error",
       {
         "ObjectExpression": {
-            "minProperties": 2,
+            "minProperties": 3,
             "consistent": true
         },
         "ObjectPattern": "never"
