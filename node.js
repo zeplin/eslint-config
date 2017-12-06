@@ -9,7 +9,6 @@ module.exports = {
     "no-buffer-constructor": "error",
     "no-console": "off",
     // additions
-    "global-require": "error",
     "handle-callback-err": "error",
     "no-duplicate-imports": ["error", { includeExports: true }],
     "no-process-env": "error",
