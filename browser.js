@@ -33,7 +33,7 @@ module.exports = {
     "react/require-render-return": "error",
     "react/self-closing-comp": ["error", { html: false, component: true }],
     "jsx-quotes": "error",
-    "react/jsx-closing-bracket-location": [1, "after-props"], 
+    "react/jsx-closing-bracket-location": ["error", "after-props"],
     "react/jsx-closing-tag-location": "error",
     "react/jsx-equals-spacing": "error",
     "react/jsx-curly-brace-presence": ["error", "never"],
