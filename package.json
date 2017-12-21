@@ -1,7 +1,12 @@
 {
   "name": "@zeplin/eslint-config",
   "version": "1.0.2",
-  "description": "Provides Zeplin's .eslintrc as an extensible config.",
+  "description": "Zeplin's homegrown `.eslintrc` as an extensible shared config.",
+  "homepage": "https://zeplin.io",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/zeplin/eslint-config.git"
+  },
   "keywords": [
     "eslint",
     "eslintconfig",
