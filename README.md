@@ -1,26 +1,33 @@
-# eslint-config-zeplin
+# eslint-config
+
+Zeplin's homegrown `.eslintrc` as an extensible shared config. 🌳
 
 ## Usage
-There are three ESLint configurations to use.
 
-Firstly, install package
-`npm install git+ssh://git@github.com/zeplin/eslint-config-zeplin.git#v1.x.x`
+Package is available on npm:
+```sh
+npm install @zeplin/eslint-config
+```
 
+## Configurations
 
-### eslint-config-zeplin or eslint-config-zeplin/base
-Default eslint configuration
+### Base
+`eslint-config` (or `eslint-config/base`) is the base configuration.
 
-* Add `extends: "zeplin"` to your .eslintrc
+- Add `extends: "@zeplin/eslint-config"` to your `.eslintrc`.
 
-### eslint-config-zeplin/browser
+### Browser
 
-Adds additional preact eslint support for browser, requires "eslint-plugin-react"
+`eslint-config/browser` adds preact support for browser use, requiring `eslint-plugin-react` as well.
 
-* Install `npm install eslint-plugin-react`
-* Add `extends: "zeplin/browser"` to your .eslintrc
+- Install `eslint-plugin-react` using npm:
+```sh
+npm install eslint-plugin-react
+```
+- Add `extends: "@zeplin/eslint-config/browser"` to your `.eslintrc`.
 
-### eslint-config-zeplin/node
+### Node.js
 
-Overrides base config, provides better support for node environment.
+`eslint-config/node` overrides the base config, providing better support for Node.js environment.
 
-* Add `extends: "zeplin/node"` to your .eslintrc
+- Add `extends: "@zeplin/eslint-config/node"` to your `.eslintrc`.
