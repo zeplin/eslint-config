@@ -14,7 +14,7 @@ npm install @zeplin/eslint-config
 ### Base
 `eslint-config` (or `eslint-config/base`) is the base configuration.
 
-- Add `extends: "zeplin"` to your `.eslintrc`.
+- Add `extends: "@zeplin/eslint-config"` to your `.eslintrc`.
 
 ### Browser
 
@@ -24,10 +24,10 @@ npm install @zeplin/eslint-config
 ```sh
 npm install eslint-plugin-react
 ```
-- Add `extends: "zeplin/browser"` to your `.eslintrc`.
+- Add `extends: "@zeplin/eslint-config/browser"` to your `.eslintrc`.
 
 ### Node.js
 
 `eslint-config/node` overrides the base config, providing better support for Node.js environment.
 
-- Add `extends: "zeplin/node"` to your `.eslintrc`.
+- Add `extends: "@zeplin/eslint-config/node"` to your `.eslintrc`.
