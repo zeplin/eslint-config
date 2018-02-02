@@ -209,17 +209,14 @@ module.exports = {
     "object-property-newline": [
       "error",
       {
-        allowMultiplePropertiesPerLine: true
+        allowAllPropertiesOnSameLine: true
       }
     ],
     "object-curly-newline": [
       "error",
       {
-        "ObjectExpression": {
-            "minProperties": 3,
-            "consistent": true
-        },
-        "ObjectPattern": "never"
+        minProperties: 5,
+        consistent: true
       }
     ],
     "object-curly-spacing": ["error", "always"],
