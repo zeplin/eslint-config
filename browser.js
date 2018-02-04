@@ -15,6 +15,22 @@ module.exports = {
   },
   extends: "./base.js",
   rules: {
+      "class-methods-use-this": [
+        "error",
+        {
+            // https://github.com/eslint/eslint/issues/7085#issuecomment-250465391
+            exceptMethods: [
+                "componentDidMount",
+                "componentDidUpdate",
+                "componentWillMount",
+                "componentWillReceiveProps",
+                "componentWillUnmount",
+                "componentWillUpdate",
+                "render",
+                "shouldComponentUpdate"
+            ]
+        }
+    ],
     "no-var": "warn",
     "react/jsx-curly-spacing": "error",
     "react/jsx-key": "warn",
