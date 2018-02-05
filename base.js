@@ -127,7 +127,6 @@ module.exports = {
     "no-loop-func": "error",
     "no-magic-numbers": "warn",
     "no-multi-assign": "error",
-    "no-mixed-operators": "error",
     "no-mixed-requires": "error",
     "no-multi-spaces": "error",
     "no-multi-str": "error",
