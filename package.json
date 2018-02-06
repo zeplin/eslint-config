@@ -1,6 +1,6 @@
 {
   "name": "@zeplin/eslint-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Zeplin's homegrown `.eslintrc` as an extensible shared config.",
   "homepage": "https://zeplin.io",
   "repository" : {
