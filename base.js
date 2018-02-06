@@ -127,7 +127,6 @@ module.exports = {
     "no-loop-func": "error",
     "no-magic-numbers": "warn",
     "no-multi-assign": "error",
-    "no-mixed-operators": "error",
     "no-mixed-requires": "error",
     "no-multi-spaces": "error",
     "no-multi-str": "error",
@@ -209,17 +208,14 @@ module.exports = {
     "object-property-newline": [
       "error",
       {
-        allowMultiplePropertiesPerLine: true
+        allowAllPropertiesOnSameLine: true
       }
     ],
     "object-curly-newline": [
       "error",
       {
-        "ObjectExpression": {
-            "minProperties": 3,
-            "consistent": true
-        },
-        "ObjectPattern": "never"
+        minProperties: 5,
+        consistent: true
       }
     ],
     "object-curly-spacing": ["error", "always"],
