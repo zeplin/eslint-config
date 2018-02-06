@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - echo "@zeplin:registry=https://registry.npmjs.org/\n//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+    - echo "@zeplin:registry=https://registry.npmjs.org/" >> ~/.npmrc
     - echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
 test:
   override:
