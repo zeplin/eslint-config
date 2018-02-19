@@ -125,7 +125,12 @@ module.exports = {
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
     "no-loop-func": "error",
-    "no-magic-numbers": "warn",
+    "no-magic-numbers": [
+        "warn",
+        {
+            "ignore": [-1, 0, 1]
+        }
+    ],
     "no-multi-assign": "error",
     "no-mixed-requires": "error",
     "no-multi-spaces": "error",
