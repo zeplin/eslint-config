@@ -67,6 +67,7 @@ module.exports = {
         "condition": "parens-new-line",
         "logical": "parens-new-line",
         "prop": "parens-new-line"
-    }]
+    }],
+    "react/react-in-jsx-scope": "error"
   }
 };
