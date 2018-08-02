@@ -32,7 +32,7 @@ module.exports = {
         }
     ],
     "no-var": "warn",
-    "react/jsx-curly-spacing": "error",
+    "react/jsx-curly-spacing": ["error", {"when": "never", "children": true}],
     "react/jsx-key": "warn",
     "react/jsx-no-bind": ["error", { ignoreRefs: true }],
     "react/jsx-no-comment-textnodes": "error",
