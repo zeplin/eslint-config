@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  publish:
+      docker:
+      - image: zeplin/amazon-linux-ami:cci-node8
+      steps:
+        - checkout
+        - run:
+            name: Publish to NPM
+            command: |
+              echo "@zeplin:registry=https://registry.npmjs.org/" >> ~/.npmrc
+              echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+              npm publish --access public
+
+workflows:
+  version: 2
+  npm_publish:
+    jobs:
+      - publish:
+          filters:
+            # Ignore any commit on any branch
+            branches:
+              ignore: /.*/
+            # Run the job only on version tags
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*/
