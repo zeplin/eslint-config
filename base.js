@@ -7,6 +7,9 @@ module.exports = {
     sourceType: "module"
   },
   extends: "eslint:recommended",
+  plugins: [
+    "import"
+  ],
   rules: {
     "accessor-pairs": "error",
     "array-bracket-spacing": ["error", "never"],
@@ -285,6 +288,37 @@ module.exports = {
       {
         exceptRange: true
       }
-    ]
+    ],
+    // Checks
+
+    // Ensure imports point to files/modules that can be resolved
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
+    "import/no-unresolved": ["error", { commonjs: true, caseSensitive: true }],
+    // Ensure named imports coupled with named exports
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md#when-not-to-use-it
+    "import/named": "error",
+    // Ensure a default export is present, given a default import.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md
+    "import/default": "error",
+    // Ensure imported namespaces contain dereferenced properties as they are dereferenced.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/namespace.md
+    "import/namespace": "error",
+    // Forbid webpack loader syntax in imports
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-webpack-loader-syntax.md
+    "import/no-webpack-loader-syntax": "error",
+    // Report any invalid exports, i.e. re-export of the same name
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/export.md
+    "import/export": "error",
+    // Style
+
+    // Report any imports that come after non-import statements.
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
+    "import/first": "error",
+    // Ensure all exports appear after other statements
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/exports-last.md
+    "import/exports-last": "error",
+    // Report repeated import of the same module in multiple places
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
+    "import/no-duplicates": "error"
   }
 };
