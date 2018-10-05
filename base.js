@@ -295,7 +295,7 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
     "import/no-unresolved": ["error", { commonjs: true, caseSensitive: true }],
     // Ensure named imports coupled with named exports
-    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md#when-not-to-use-it
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md
     "import/named": "error",
     // Ensure a default export is present, given a default import.
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md
@@ -314,9 +314,6 @@ module.exports = {
     // Report any imports that come after non-import statements.
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md
     "import/first": "error",
-    // Ensure all exports appear after other statements
-    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/exports-last.md
-    "import/exports-last": "error",
     // Report repeated import of the same module in multiple places
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
     "import/no-duplicates": "error"
