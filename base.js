@@ -316,6 +316,9 @@ module.exports = {
         "import/first": "error",
         // Report repeated import of the same module in multiple places
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md
-        "import/no-duplicates": "error"
+        "import/no-duplicates": "error",
+        // Ensure all exports appear after other statements
+        // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/exports-last.md
+        "import/exports-last": "error"
     }
 };
