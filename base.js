@@ -42,7 +42,7 @@ module.exports = {
         "complexity": [
             "warn",
             {
-                max: 10
+                max: 30
             }
         ],
         "computed-property-spacing": ["error", "never"],
