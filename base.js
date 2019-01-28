@@ -34,17 +34,12 @@ module.exports = {
                 properties: "never"
             }
         ],
-        "capitalized-comments": ["warn"],
+        "capitalized-comments": "warn",
         "class-methods-use-this": "error",
         "comma-dangle": "error",
         "comma-spacing": "error",
         "comma-style": ["error", "last"],
-        "complexity": [
-            "warn",
-            {
-                max: 30
-            }
-        ],
+        "complexity": "warn",
         "computed-property-spacing": ["error", "never"],
         "curly": "error",
         "default-case": "warn",
@@ -269,10 +264,7 @@ module.exports = {
         "strict": ["error", "function"],
         "template-curly-spacing": ["error", "never"],
         "template-tag-spacing": "error",
-        "unicode-bom": [
-            "error",
-            "never"
-        ],
+        "unicode-bom": ["error", "never"],
         "valid-jsdoc": "error",
         "valid-typeof": [
             "error",
