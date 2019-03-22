@@ -166,6 +166,7 @@ module.exports = {
         "no-shadow": [
             "error",
             {
+                allow: ["_"],
                 hoist: "functions"
             }
         ],
