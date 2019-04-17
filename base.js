@@ -45,7 +45,7 @@ module.exports = {
         "default-case": "warn",
         "dot-location": ["error", "property"],
         "dot-notation": "error",
-        "eol-last": "off",
+        "eol-last": "always",
         "eqeqeq": "error",
         "for-direction": "error",
         "func-style": [
