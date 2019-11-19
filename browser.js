@@ -15,10 +15,11 @@ module.exports = {
     },
     extends: "./base.js",
     rules: {
+        "capitalized-comments": "off",
         "class-methods-use-this": [
             "error",
             {
-            // https://github.com/eslint/eslint/issues/7085#issuecomment-250465391
+                // https://github.com/eslint/eslint/issues/7085#issuecomment-250465391
                 exceptMethods: [
                     "componentDidMount",
                     "componentDidUpdate",
@@ -31,7 +32,9 @@ module.exports = {
                 ]
             }
         ],
+        "eol-last": "always",
         "no-var": "warn",
+        "object-shorthand": ["warn", "always"],
         "react/jsx-curly-spacing": ["error", { when: "never", children: true }],
         "react/jsx-key": "warn",
         "react/jsx-no-bind": ["error", { ignoreRefs: true }],
