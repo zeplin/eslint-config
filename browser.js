@@ -32,7 +32,7 @@ module.exports = {
                 ]
             }
         ],
-        "eol-last": "always",
+        "eol-last": ["error", "always"],
         "no-var": "warn",
         "object-shorthand": ["warn", "always"],
         "react/jsx-curly-spacing": ["error", { when: "never", children: true }],
