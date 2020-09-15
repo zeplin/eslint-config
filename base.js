@@ -186,7 +186,7 @@ module.exports = {
                 allow: ["_id", "__v"]
             }
         ],
-        "no-undefined": "error",
+        "no-undefined": "off",
         "no-undef-init": "error",
         "no-unmodified-loop-condition": "error",
         "no-unneeded-ternary": "error",
