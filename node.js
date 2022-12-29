@@ -8,6 +8,7 @@ module.exports = {
     // Overrides
         "no-buffer-constructor": "error",
         "no-console": "off",
+        "comma-dangle": ["error", "only-multiline"],
         // Additions
         "handle-callback-err": "error",
         "no-duplicate-imports": ["error", { includeExports: true }],
